@@ -1,0 +1,57 @@
+/* Dezactivează scroll-ul pe pagină */
+body, html {
+  overflow: hidden; /* Dezactivează scroll-ul */
+  height: 100%; /* Se asigură că ocupă întreaga înălțime a ecranului */
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #03e1ba; /* Fundal pentru header general */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #00f0c5;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.main-content {
+  background-image: url('./assets/dentist.jpg'); /* Imaginea de fundal */
+  background-size: cover; /* Imaginea acoperă întreaga zonă */
+  background-position: center; /* Imaginea este centrată */
+  background-repeat: no-repeat; /* Nu repetă imaginea */
+  height: calc(100vh - 70px); /* Ajustează înălțimea pentru navbar */
+  width: 100%; /* Ocupă întreaga lățime */
+  display: flex; /* Folosit pentru alinierea conținutului */
+  align-items: center; /* Centrare verticală a conținutului */
+  justify-content: center; /* Centrare orizontală a conținutului */
+  overflow: hidden; /* Previne scroll-ul în interiorul secțiunii */
+}

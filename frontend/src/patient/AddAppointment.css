@@ -1,0 +1,53 @@
+.add-appointment-page {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20px;
+  }
+  
+  .add-appointment-container {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .add-appointment-form {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+  }
+  
+  .appointments-list {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    max-height: 600px; /* Limitează înălțimea */
+    overflow-y: auto; /* Adaugă scroll vertical */
+  }
+  
+  .appointments-list h2 {
+    margin-bottom: 10px;
+  }
+  
+  .appointments-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .appointments-list li {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+  }
+  
+  .appointments-list li:last-child {
+    border-bottom: none;
+  }
+  

@@ -1,0 +1,74 @@
+/* Stiluri generale */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f9fc; /* Fundal deschis pentru întregul site */
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Centrarea formularului */
+  .center-form {
+    max-width: 400px; /* Lățimea maximă a formularului */
+    margin: 50px auto; /* Centrare verticală și orizontală */
+    background: #ffffff; /* Fundal alb pentru formular */
+    padding: 30px; /* Spațiu interior */
+    border-radius: 8px; /* Colțuri rotunjite */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Umbra formularului */
+  }
+  
+  /* Titlu */
+  .center-form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; /* Culoarea textului titlului */
+    font-size: 24px;
+  }
+  
+  /* Inputuri */
+  .center-form .form-control {
+    border: 1px solid #ccc; /* Margine subțire gri */
+    border-radius: 6px; /* Colțuri rotunjite */
+    padding: 10px; /* Spațiu interior */
+    font-size: 16px; /* Dimensiunea textului */
+    margin-bottom: 15px; /* Spațiu între inputuri */
+    transition: border-color 0.3s ease; /* Efect de tranziție pentru margine */
+  }
+  
+  /* Focus pe inputuri */
+  .center-form .form-control:focus {
+    border-color: #007bff; /* Albastru pentru focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Umbra când e focus */
+    outline: none;
+  }
+  
+  /* Buton */
+  .center-form .btn-primary {
+    background-color: #007bff; /* Albastru Bootstrap */
+    border-color: #007bff; /* Marginea butonului */
+    padding: 10px 15px; /* Spațiu interior al butonului */
+    font-size: 16px; /* Dimensiunea textului */
+    border-radius: 6px; /* Colțuri rotunjite */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Efecte hover */
+  }
+  
+  /* Hover pe buton */
+  .center-form .btn-primary:hover {
+    background-color: #0056b3; /* Albastru mai închis */
+    transform: scale(1.02); /* Ușoară creștere */
+  }
+  
+  /* Responsivitate */
+  @media (max-width: 576px) {
+    .center-form {
+      padding: 20px; /* Reducem spațiul pentru ecrane mici */
+    }
+  
+    .center-form h1 {
+      font-size: 20px; /* Reducem dimensiunea titlului */
+    }
+  
+    .center-form .btn-primary {
+      font-size: 14px; /* Reducem dimensiunea textului butonului */
+    }
+  }
+  

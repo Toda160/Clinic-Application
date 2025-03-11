@@ -1,0 +1,104 @@
+/* Container general */
+.home-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Secțiunea de bun venit */
+  .welcome-section {
+    background-color: #f0f8ff;
+    padding: 40px 20px;
+    border-radius: 15px; /* Rotunjirea colțurilor */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animație pentru hover */
+  }
+  
+  .welcome-section:hover {
+    transform: scale(1.02); /* Mărire subtilă */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Umbră la hover */
+  }
+  
+  .welcome-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .welcome-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Butonul principal */
+  .appointment-button {
+    background-color: #00c9a7;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease; /* Animație smooth */
+  }
+  
+  .appointment-button:hover {
+    background-color: #008f7a;
+    transform: scale(1.1); /* Mărire subtilă la hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Adăugare umbră la hover */
+  }
+  
+  /* Secțiunea de servicii */
+  .services-section {
+    margin-top: 40px;
+  }
+  
+  .services-section h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+  
+  /* Container pentru carduri */
+  .cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  /* Stiluri pentru carduri */
+  .card {
+    background-color: #e6f7ff;
+    border: 1px solid #00c9a7;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animație smooth */
+  }
+  
+  .card:hover {
+    transform: translateY(-10px); /* Liftare la hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Umbra devine mai pronunțată */
+  }
+  
+  /* Stiluri suplimentare pentru conținutul cardurilor */
+  .card h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .card p {
+    font-size: 1rem;
+  }
+  
+  /* Stiluri responsive */
+  @media (max-width: 768px) {
+    .cards-container {
+      flex-direction: column; /* Cardurile se aliniază pe verticală */
+      align-items: center;
+    }
+  
+    .card {
+      width: 90%; /* Cardurile ocupă 90% din lățime */
+    }
+  }
+  

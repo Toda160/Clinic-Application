@@ -1,0 +1,118 @@
+/* Stiluri generale pentru header */
+header {
+  background-color: #03e1ba; /* Fundal turcoaz */
+  color: #ffffff; /* Text alb */
+  padding: 20px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Umbră subtilă */
+  position: sticky; /* Fixare în partea de sus */
+  top: 0;
+  z-index: 1000;
+}
+
+/* Titlul principal din header */
+header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 0;
+  transition: transform 0.3s ease, color 0.3s ease; /* Animație pe hover */
+}
+
+header h1:hover {
+  transform: scale(1.1); /* Mărire subtilă pe hover */
+  color: #ffffff;
+}
+
+/* Stiluri pentru navigare */
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+/* Lista de navigație */
+header nav ul li {
+  margin: 0 10px;
+}
+
+/* Stiluri pentru link-urile de navigație */
+.nav-link-custom {
+  font-size: 1rem;
+  color: #ffffff; /* Text alb */
+  padding: 10px 15px;
+  border-radius: 25px; /* Colțuri rotunjite */
+  background-color: rgba(255, 255, 255, 0.2); /* Fundal transparent */
+  text-decoration: none; /* Elimină sublinierea */
+  transition: all 0.3s ease; /* Animație smooth */
+  display: inline-block; /* Pentru efecte de hover */
+}
+
+.nav-link-custom:hover {
+  background-color: #02bda2; /* O nuanță mai închisă de turcoaz */
+  color: #ffffff;
+  transform: scale(1.1); /* Ușor efect de mărire */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Umbră la hover */
+}
+
+/* Animații subtile pentru apariția link-urilor */
+.nav-link-custom[data-aos] {
+  opacity: 0;
+  transform: translateY(20px); /* Începe mai jos */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth entry */
+}
+
+.nav-link-custom[data-aos].aos-animate {
+  opacity: 1;
+  transform: translateY(0); /* Reveni la poziția normală */
+}
+
+/* Stil pentru butonul "Log Out" */
+.btn-danger-custom {
+  background-color: #f44336; /* Roșu vibrant */
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px; /* Colțuri rotunjite complet */
+  transition: all 0.3s ease; /* Animație smooth */
+  cursor: pointer;
+}
+
+.btn-danger-custom:hover {
+  background-color: #c9302c; /* Roșu mai închis */
+  transform: translateY(-2px); /* Efect de ridicare */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Umbră la hover */
+}
+
+/* Efect de animație pentru butonul de Logout */
+.btn-danger-custom[data-aos] {
+  opacity: 0;
+  transform: translateX(20px); /* Începe ușor în dreapta */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.btn-danger-custom[data-aos].aos-animate {
+  opacity: 1;
+  transform: translateX(0); /* Revine la poziția inițială */
+}
+
+/* Responsivitate */
+@media (max-width: 768px) {
+  header nav ul {
+    flex-direction: column; /* Listează link-urile pe verticală */
+    align-items: center;
+  }
+
+  .nav-link-custom {
+    width: 100%; /* Link-urile ocupă întreaga lățime */
+    text-align: center;
+    margin: 5px 0;
+  }
+
+  .btn-danger-custom {
+    width: 100%; /* Ocupă lățimea completă */
+    text-align: center;
+    margin: 10px 0;
+  }
+}

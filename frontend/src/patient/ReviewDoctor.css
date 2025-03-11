@@ -1,0 +1,52 @@
+.review-doctor-container {
+    max-width: 350px; /* Dimensiunea maximă redusă */
+    margin: 20px auto; /* Margini mai mici, centru */
+    padding: 15px; /* Padding redus */
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 18px; /* Font mai mic pentru titlu */
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px; /* Spațiu mai mic între label și input */
+    font-weight: bold;
+    font-size: 14px; /* Dimensiune text mai mică */
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 6px; /* Padding mai mic */
+    margin-bottom: 12px; /* Spațiu redus între câmpuri */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px; /* Font mai mic */
+}
+
+form button {
+    display: block;
+    width: 100%;
+    padding: 8px; /* Padding mai mic */
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px; /* Dimensiune text mai mică */
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+p {
+    text-align: center;
+    font-size: 12px; /* Font mai mic pentru mesajele de succes/eroare */
+}
